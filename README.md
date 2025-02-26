@@ -11,6 +11,30 @@ This is a Spring Boot-based User Management API that allows users to register, u
 - JSON
 - PostgreSQL
 
+## Project Structure
+```
+User Management API
+├── src/main/java/com/aniket/Login
+│   ├── Controller
+│   │   └── UserController.java        # Manages user-related HTTP requests
+│   ├── Service
+│   │   ├── UserService.java           # Implements business logic for user operations
+│   │   ├── MyUserDetailService.java   # Handles user authentication and authorization details
+│   ├── Model
+│   │   ├── Users.java                 # Represents the User entity
+│   │   ├── UsersWrapper.java          # Wraps user details
+│   │   ├── PasswordWrapper.java       # Handles password update requests
+│   │   ├── UserPrincipal.java         # Implements UserDetails for Spring Security
+│   ├── Repository
+│   │   └── UserRepository.java        # Interface for database operations
+│   ├── Config
+│   │   └── SecurityConfig.java        # Configures Spring Security settings
+│   ├── Application.java               # Main class to run the Spring Boot application
+├── src/main/resources
+│   └── application.properties         # Contains database and application configurations
+```
+
+
 ## Endpoints
 
 ### 1. User Registration
