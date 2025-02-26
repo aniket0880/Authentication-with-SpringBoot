@@ -9,6 +9,7 @@ This is a Spring Boot-based User Management API that allows users to register, u
 - Spring Web
 - REST API
 - JSON
+- PostgreSQL
 
 ## Endpoints
 
@@ -122,6 +123,7 @@ This is a Spring Boot-based User Management API that allows users to register, u
    cd your-project-folder
    ```
 3. Configure the application properties:
+   - `Note :` User must have postgres to run this project
    - Navigate to `src/main/resources/application.properties`.
    - Update database configuration and other necessary settings:
    ```properties
